@@ -2382,6 +2382,7 @@
           if (options.animation) {
             bodyElement.removeClass(options.prefixClass + '-with-' + options.animation);
           }
+          $modal.destroy();
         }
         $modal.toggle = function() {
           if ($modal.$isShown) {
