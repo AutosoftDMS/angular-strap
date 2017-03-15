@@ -490,6 +490,7 @@
             }
             destroyTipElement();
           }
+          $tooltip.destroy();
         }
         $tooltip.toggle = function(evt) {
           if (evt) {
