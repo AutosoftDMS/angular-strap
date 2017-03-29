@@ -491,7 +491,7 @@
             destroyTipElement();
           }
 
-          if(!_blur && options.trigger !== 'focus'){
+          if(options.trigger === 'manual'){
             $tooltip.destroy();
           }
         }
