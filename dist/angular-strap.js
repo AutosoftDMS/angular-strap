@@ -490,7 +490,10 @@
             }
             destroyTipElement();
           }
-          $tooltip.destroy();
+
+          if(!_blur && options.trigger !== 'focus'){
+            $tooltip.destroy();
+          }
         }
         $tooltip.toggle = function(evt) {
           if (evt) {
